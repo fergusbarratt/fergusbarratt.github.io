@@ -7,10 +7,67 @@
 		</div>
 	</header>
 	<div class="post-inner thin">
-		<div class="entry-content">
-			{{ .Content }}
-		</div>
-	</div>
+	  <div class="entry-content">
+	  	{{ .Content }}
+      </div>
+
+      <h3 class="team-title">The Team</h3>
+
+      {{ with.Site.Params.about.fergus_image}}
+            <div id="container">
+              <div class="item">
+                    <a href="#" class="link">
+                          <img width="100%" class="imagecontainer" src="{{ . | absURL }}" alt=""/>
+                        <h5 class="caption-heading">Dr. Fergus Barratt </h5>
+                        <p class="caption-title"> CTO </p>
+                        <p class="caption">
+                        PhD, Data-driven analysis of Non-Equilibrium Dynamics (KCL)
+                    </a>
+                </div>
+      {{end}}
+      {{ with.Site.Params.about.jamie_image}}
+                <div class="item">
+                    <a href="#" class="link">
+                          <img width="100%" class="imagecontainer" src="{{ . | absURL }}" alt=""/>
+                        <h5 class="caption-heading">Jamie Dborin </h5>
+                        <p class="caption-title">CEO</p>
+                        <p class="caption">
+                        PhD, Quantum Machine Learning (UCL)
+                        <br>
+                        <br>
+                        </p>
+                    </a>
+                </div>
+      {{end}}
+      {{ with.Site.Params.about.lewis_image}}
+                <div class="item">
+                    <a href="#" class="link">
+                          <img width="100%" class="imagecontainer" src="{{ . | absURL }}" alt=""/>
+                        <h5 class="caption-heading">Lewis Wright </h5>
+                        <p class="caption-title">CDO</p>
+                        <p class="caption">
+                        PhD, Dynamics of Machine Learning (KCL)
+                        <br>
+                        <br>
+                        </p>
+                    </a>
+                </div>
+      {{end}}
+      <!--
+      {{ with.Site.Params.about.meryem_image}}
+                <div class="item">
+                    <a href="#" class="link">
+                          <img width="100%" class="imagecontainer" src="{{ . | absURL }}" alt=""/>
+                        <p class="caption">Meryem Arik </p>
+                    </a>
+                </div>
+      {{end}}
+      -->
+            </div>
+</div>
+
+
+
 </article>
 
 {{ end }}

@@ -57,6 +57,11 @@ name = "TinyTN"
 URL = "tinytn/"
 weight = 3
 
+[[menu.main]]
+name = "About us"
+URL = "about/"
+weight = 4
+
 # only desktop menu
 [[menu.desktop]]
 name = "Contact"
@@ -67,6 +72,11 @@ weight = 1
 name = "TinyTN"
 URL = "tinytn/"
 weight = 2
+
+[[menu.desktop]]
+name = "About us"
+URL = "about/"
+weight = 3
 
 
 #################### default parameters ################################
@@ -86,8 +96,14 @@ expire_days = 2
 # banner
 [params.banner]
 heading = "TyTN.ai"
-#image = "images/chip.jpg"
 image = "images/pexels-pixabay-270549.jpg"
+
+[params.about]
+fergus_image = "images/fergus_image.jpg"
+jamie_image = "images/jamie_image.jpg"
+lewis_image = "images/lewis_image.jpg"
+meryem_image = "images/150.png"
+fergus_content = "PhD"
 
 
 # blog
@@ -118,7 +134,7 @@ image = "images/2020-square-1.png"
 [params.footer]
 title = "About Us"
 content = "AI compression inspired by quantum mechanics research"
-#address = "123 Main Street <br> New York, NY 10001"
+address = "123 Main Street <br> New York, NY 10001"
 #hours = ""
 #copyright = "Copyright &copy; 2021 a hugo theme by [themefisher](https://themefisher.com/hugo-themes/) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
 
@@ -129,5 +145,5 @@ content = "AI compression inspired by quantum mechanics research"
 #facebook = "#"
 #twitter = "#"
 #instagram = "#"
-email = "mailto:tytn.uk@gmail.com"
+#email = "mailto:tytn.uk@gmail.com"
 #linkedin = "#"
